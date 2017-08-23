@@ -1,0 +1,18 @@
+html
+  head
+    title House alarm
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    style.
+      body {
+        padding: 30px;
+      }
+  body
+    if enabled
+      h2.h2 The sensor is enabled
+      form(method="POST" action="/disable")
+        button.btn.btn-danger Disable
+    else
+      h2.h2 The sensor is disabled
+      form(method="POST" action="/enable")
+        button.btn.btn-primary Enable

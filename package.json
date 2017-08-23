@@ -1,0 +1,30 @@
+{
+  "name": "sensor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "postinstall": "npm run build",
+    "start": "ts-node src/index.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/dotenv": "^4.0.1",
+    "@types/node": "^8.0.24",
+    "@types/winston": "^2.3.5",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.4",
+    "onoff": "^1.1.2",
+    "pug": "^2.0.0-rc.3",
+    "request": "^2.81.0",
+    "typescript": "^2.4.2",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.5.3",
+    "ts-node": "^3.3.0"
+  }
+}
