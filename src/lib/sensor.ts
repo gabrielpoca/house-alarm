@@ -17,7 +17,7 @@ if (process.env.NODE_ENV === 'production') {
     }
   })
 } else {
-  log.info('Using fake sensor')
+  log.info('Sensor', 'using fake sensor')
 
   setInterval(() => {
     emitter.emit('movement')

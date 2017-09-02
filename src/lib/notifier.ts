@@ -12,9 +12,9 @@ const notify = () => {
   timerId = setTimeout(function() {
     clearTimeout(timerId)
     timerId = null
-  }, 30000)
+  }, 1000 * 60 * 5) // 5 minutes
 
-  log.info('Sending intruder notification')
+  log.info('Notifier', 'sending intruder notification')
 
   try {
     request.post(notificationURL, { form: {} })

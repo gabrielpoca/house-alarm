@@ -14,17 +14,17 @@ app.get('/', (req, res) => {
 })
 
 app.post('/enable', (req, res) => {
-  log.info('Enabling notifier')
+  log.info('Web', 'enabling notifier')
   setEnabled()
   res.redirect('/')
 })
 
 app.post('/disable', (req, res) => {
-  log.info('Disabling notifier')
+  log.info('Web', 'disabling notifier')
   setDisabled()
   res.redirect('/')
 })
 
 export default {
-  start: () => app.listen(port, () => log.info('Web application running'))
+  start: () => app.listen(port, () => log.info('Web', 'application running'))
 }
