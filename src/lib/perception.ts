@@ -54,5 +54,5 @@ export const start = () => {
   log.info('Perception', `starting on interface ${hwInterface}`)
 
   runPerception()
-  setInterval(runPerception, 10000)
+  setInterval(runPerception, 1000 * 30) // 30 seconds
 }
